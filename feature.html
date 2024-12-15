@@ -87,6 +87,7 @@
         <h1>Tornado Hits Scotts Valley - December 14, 2024</h1>
          <img src="logo img" alt="Bay Area Intelligence Logo" style="position: absolute; top: 10px; left: 20px; height: 70px;">
     </header>
+    <div id="current-time" style="position: absolute; top: 30px; right: 20px; color: white;"></div>
     <nav>
         <a href="index.html">Home</a>
         <a href="feature.html">Latest News</a>
@@ -132,5 +133,14 @@
     <footer class="footer">
         <p>&copy; 2024 Bay Area Intelligence. All rights reserved.</p>
     </footer>
+    <script>
+    function updateTime() {
+        const options = { timeZone: 'America/Los_Angeles', timeStyle: 'short', dateStyle: 'full' };
+        const currentTime = new Date().toLocaleString('en-US', options);
+        document.getElementById('current-time').innerText = currentTime;
+    }
+    setInterval(updateTime, 1000); // Update every second
+    updateTime(); // Call initially
+</script>
 </body>
 </html>
