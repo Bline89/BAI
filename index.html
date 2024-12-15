@@ -53,53 +53,15 @@
             background-color: #333;
             color: white;
         }
-
-        /* Responsive Design for Mobile */
-        @media (max-width: 768px) {
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            .main-content {
-                flex-direction: column;
-                padding: 10px;
-            }
-
-            .article {
-                width: 100%;
-                margin: 10px 0;
-            }
-
-            .welcome-section {
-                padding: 20px 10px;
-            }
+        .article img {
+            width: 100%;
+            border-radius: 8px;
         }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.5em;
-            }
-
-            nav {
-                padding: 5px;
-            }
-
-            nav a {
-                font-size: 0.9em;
-            }
-
-            .welcome-section h2 {
-                font-size: 1.2em;
-            }
-
-            .welcome-section p {
-                font-size: 0.9em;
-            }
-
-            footer p {
-                font-size: 0.8em;
-            }
+        .article p {
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 8px;
         }
     </style>
 </head>
@@ -118,14 +80,18 @@
     <div class="welcome-section">
         <h2>Welcome to the New Website!</h2>
         <p>We are a news site that features real-time, AI-generated content. Get the latest news with a twist – everything you read here is created by Artificial Intelligence, bringing you a unique perspective on the world!</p>
-        <p>Created by some guys that had a debate on the future of AI :)</p>
+        <p>Created by some guys that had a debate on the future of AI :) </p>
     </div>
 
     <div class="main-content">
         <div class="article">
             <h2>Did a Tornado Touch Down in San Francisco?</h2>
-            <p>On December 14, reports of unusual weather sparked curiosity about whether a tornado hit San Francisco. Was it just strong winds or something more?</p>
-            <a href="feature.html" target="_blank">Read the full story...</a>
+            <p>Speculation about a tornado striking San Francisco has sparked curiosity. Our investigation dives into the facts behind the claims.</p>
+            <a href="feature-tornado.html">Read the full story...</a>
+        </div>
+        <div class="article">
+            <img src="Tornado img" alt="Tornado in San Francisco">
+            <p>AI Generated image of a tornado ripping through San Francisco</p>
         </div>
     </div>
 
