@@ -107,5 +107,14 @@
     <footer class="footer">
         <p>&copy; 2024 Bay Area Intelligence. All rights reserved.</p>
     </footer>
+    <script>
+    function updateTime() {
+        const options = { timeZone: 'America/Los_Angeles', timeStyle: 'short', dateStyle: 'full' };
+        const currentTime = new Date().toLocaleString('en-US', options);
+        document.getElementById('current-time').innerText = currentTime;
+    }
+    setInterval(updateTime, 1000); // Update every second
+    updateTime(); // Call initially
+</script>
 </body>
 </html>
